@@ -1,0 +1,19 @@
+
+<div id="map" #map></div>
+
+<div class="caja">
+    <mat-card class="card">
+        <mat-form-field class="w-100" appearance="outline">
+            <mat-label>¿De dónde sales?</mat-label>
+            <input matInput placeholder="¿De dónde sales?" id="origen" #origen>
+            <mat-icon matPrefix>home</mat-icon>
+        </mat-form-field>
+        <mat-form-field class="w-100" appearance="outline">
+            <mat-label>¿A dónde te diriges?</mat-label>
+            <input matInput placeholder="¿A dónde te diriges?" id="destino" #destino>
+            <mat-icon matPrefix>work</mat-icon>
+        </mat-form-field>
+        <button class="w-100" mat-raised-button color="warn" (click)="buscar()">Buscar ruta</button>
+        <a class="linkForm">+ ver todas las rutas</a>
+    </mat-card>
+</div>
